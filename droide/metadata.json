@@ -1,0 +1,6 @@
+{
+  "name": "DROIDE",
+  "description": "DROIDE - An AI chat application DEVELOPED BY /dzdev. Featuring a 100% Android Native Mobile App Design.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
