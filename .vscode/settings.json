@@ -1,5 +1,7 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "unzip": true
+        "967": true,
+        "unzip": true,
+        "_base_src_unpacked": true
     }
 }
