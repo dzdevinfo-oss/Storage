@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/appBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@id/myToolBar"
+                android:background="@color/button"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ListView
+        android:id="@id/routeList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        style="@style/MyListView" />
+    <ProgressBar
+        android:layout_gravity="bottom"
+        android:id="@id/myProgressBar"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_drawable"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:layout_below="@id/appBarLayout"
+        style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

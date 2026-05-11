@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@id/noipLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300.0dip"
+        android:hint="@string/noipLogin"
+        android:ems="10"
+        style="@style/MainColorStyle">
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@id/noipPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300.0dip"
+        android:hint="@string/password"
+        android:ems="10"
+        android:inputType="textPassword"
+        style="@style/MainColorStyle">
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@id/noipHost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300.0dip"
+        android:hint="@string/noipHost"
+        android:ems="10"
+        style="@style/MainColorStyle">
+        <requestFocus />
+    </EditText>
+</LinearLayout>

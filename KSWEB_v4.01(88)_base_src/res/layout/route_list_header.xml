@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="25.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@id/basePort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="300.0dip"
+            android:hint="@string/port"
+            android:ems="10"
+            android:inputType="phone|textNoSuggestions"
+            android:importantForAutofill="no"
+            style="@style/MainColorStyle" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip">
+        <EditText
+            android:id="@id/routeToPort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="300.0dip"
+            android:hint="@string/routeToPort"
+            android:ems="10"
+            android:inputType="phone|textNoSuggestions"
+            android:importantForAutofill="no"
+            style="@style/MainColorStyle" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@id/typeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip"
+        android:checkedButton="@id/localeRouteType">
+        <RadioButton
+            android:id="@id/localeRouteType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/localeRoute"
+            style="@style/TextViewStyle" />
+        <RadioButton
+            android:id="@id/externalRouteType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/externalRoute"
+            style="@style/TextViewStyle" />
+    </RadioGroup>
+    <Button
+        android:id="@id/addRouteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/addRoute"
+        android:layout_marginStart="4.0dip"
+        style="@style/ButtonStyle" />
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/totalRoutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" />
+        <TextView
+            android:id="@id/activeRoutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

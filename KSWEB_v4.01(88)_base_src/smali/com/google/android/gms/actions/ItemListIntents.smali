@@ -1,0 +1,43 @@
+.class public Lcom/google/android/gms/actions/ItemListIntents;
+.super Ljava/lang/Object;
+.source "r8-map-id-07a2e46efc69344df0bd7ad0a3338ee8820a11ae43deece80f250d59a6cc30c8"
+
+
+# static fields
+.field public static final ACTION_ACCEPT_ITEM:Ljava/lang/String; = "com.google.android.gms.actions.ACCEPT_ITEM"
+
+.field public static final ACTION_APPEND_ITEM_LIST:Ljava/lang/String; = "com.google.android.gms.actions.APPEND_ITEM_LIST"
+
+.field public static final ACTION_CREATE_ITEM_LIST:Ljava/lang/String; = "com.google.android.gms.actions.CREATE_ITEM_LIST"
+
+.field public static final ACTION_DELETE_ITEM:Ljava/lang/String; = "com.google.android.gms.actions.DELETE_ITEM"
+
+.field public static final ACTION_DELETE_ITEM_LIST:Ljava/lang/String; = "com.google.android.gms.actions.DELETE_ITEM_LIST"
+
+.field public static final ACTION_REJECT_ITEM:Ljava/lang/String; = "com.google.android.gms.actions.REJECT_ITEM"
+
+.field public static final EXTRA_ITEM_NAME:Ljava/lang/String; = "com.google.android.gms.actions.extra.ITEM_NAME"
+
+.field public static final EXTRA_ITEM_NAMES:Ljava/lang/String; = "com.google.android.gms.actions.extra.ITEM_NAMES"
+
+.field public static final EXTRA_ITEM_QUERY:Ljava/lang/String; = "com.google.android.gms.actions.extra.ITEM_QUERY"
+
+.field public static final EXTRA_LIST_NAME:Ljava/lang/String; = "com.google.android.gms.actions.extra.LIST_NAME"
+
+.field public static final EXTRA_LIST_QUERY:Ljava/lang/String; = "com.google.android.gms.actions.extra.LIST_QUERY"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    return-void
+.end method

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@id/goToInternalAppFolderBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:text="@string/internalAppFolder"
+        style="@style/ButtonStyle" />
+    <ListView
+        android:id="@id/chooseFileList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/default_selector_single_choice"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:choiceMode="singleChoice" />
+</LinearLayout>

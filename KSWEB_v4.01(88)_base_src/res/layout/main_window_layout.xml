@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/myAppBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@id/myTabLayout"
+            android:background="@color/button"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="25.0dip"
+            app:tabPaddingStart="25.0dip"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TabLayoutTextStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/myAppBarLayout" />
+    <ProgressBar
+        android:id="@id/progress"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_drawable"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:layout_below="@id/myAppBarLayout"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

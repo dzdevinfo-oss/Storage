@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingBottom="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip">
+        <TextView
+            android:id="@id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/port"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10.0dip" />
+        <EditText
+            android:id="@id/basePort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_toRightOf="@id/tv1"
+            android:inputType="phone|textNoSuggestions"
+            style="@style/MainColorStyle" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip">
+        <TextView
+            android:id="@id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/routeToPort"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10.0dip" />
+        <EditText
+            android:id="@id/routeToPort"
+            android:layout_width="233.0dip"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_toRightOf="@id/tv2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:inputType="phone|textNoSuggestions"
+            android:layout_toEndOf="@id/tv2"
+            android:layout_alignParentEnd="true"
+            style="@style/MainColorStyle" />
+    </RelativeLayout>
+    <Button
+        android:layout_gravity="end"
+        android:id="@id/addRouteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/addRoute"
+        style="@style/ButtonStyle" />
+    <TextView
+        android:id="@id/totalRoutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="Total routes: " />
+</LinearLayout>

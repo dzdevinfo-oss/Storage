@@ -1,0 +1,71 @@
+.class final Ljava8/util/concurrent/g0;
+.super Ljava/lang/Object;
+.source "r8-map-id-07a2e46efc69344df0bd7ad0a3338ee8820a11ae43deece80f250d59a6cc30c8"
+
+# interfaces
+.implements Ljava/security/PrivilegedAction;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v2, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/Boolean;
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    const-string v3, "java.util.secureRandomSeed"
+
+    move-object v0, v3
+
+    .line 3
+    invoke-static {v0}, Ljava/lang/Boolean;->getBoolean(Ljava/lang/String;)Z
+
+    .line 6
+    move-result v3
+
+    move v0, v3
+
+    .line 7
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 10
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 11
+    return-object v0
+.end method
+
+.method public bridge synthetic run()Ljava/lang/Object;
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    invoke-virtual {v1}, Ljava8/util/concurrent/g0;->a()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 5
+    return-object v0
+.end method

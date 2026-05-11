@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_toolbar_menu"
+        android:id="@id/empty"
+        android:orderInCategory="101"
+        android:title="@string/menuBtn"
+        yourapp:showAsAction="always">
+        <menu>
+            <item
+                android:icon="@drawable/ic_folder_open"
+                android:id="@id/selectProjectDir"
+                android:title="@string/composerSelectCustomProjectDir"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_folder_open"
+                android:id="@id/selectProjectDirFromExistingHostBtn"
+                android:title="@string/composerSelectProjectDirFromHost"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_update"
+                android:id="@id/updateComposerBtn"
+                android:title="@string/updateComposer"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_clear"
+                android:id="@id/clearOutputBtn"
+                android:title="@string/clearOutput"
+                yourapp:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@id/message_spv"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="10.0dip"
+        style="@style/TextViewStyle" />
+    <Button
+        android:id="@id/updateAvailableBtn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/updateAvailableBtn"
+        style="@style/ButtonStyleGreen" />
+    <RadioGroup
+        android:id="@id/phpVersionRadioGroup"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

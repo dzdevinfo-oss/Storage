@@ -1,0 +1,14 @@
+.class interface abstract Landroid/support/v4/media/j;
+.super Ljava/lang/Object;
+.source "r8-map-id-07a2e46efc69344df0bd7ad0a3338ee8820a11ae43deece80f250d59a6cc30c8"
+
+
+# virtual methods
+.method public abstract d(Landroid/os/Messenger;)V
+.end method
+
+.method public abstract f(Landroid/os/Messenger;Ljava/lang/String;Landroid/support/v4/media/session/MediaSessionCompat$Token;Landroid/os/Bundle;)V
+.end method
+
+.method public abstract g(Landroid/os/Messenger;Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Landroid/os/Bundle;)V
+.end method

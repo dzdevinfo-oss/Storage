@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_menu_array">
+        <item>状态</item>
+        <item>Lighttpd</item>
+        <item>Nginx</item>
+        <item>Apache</item>
+        <item>MySQL</item>
+        <item>PHP</item>
+        <item>FTP</item>
+        <item>计划任务</item>
+        <item>工具</item>
+        <item>设置</item>
+    </string-array>
+</resources>

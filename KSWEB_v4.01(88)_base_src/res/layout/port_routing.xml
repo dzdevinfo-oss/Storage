@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300.0dip"
+    android:minHeight="250.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView
+        android:id="@id/routeRuleList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:listSelector="@drawable/default_selector"
+        android:minWidth="300.0dip" />
+</LinearLayout>

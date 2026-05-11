@@ -1,0 +1,162 @@
+.class abstract Lcom/google/android/gms/common/api/internal/zad;
+.super Lcom/google/android/gms/common/api/internal/zac;
+.source "r8-map-id-07a2e46efc69344df0bd7ad0a3338ee8820a11ae43deece80f250d59a6cc30c8"
+
+
+# instance fields
+.field protected final zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+
+# direct methods
+.method public constructor <init>(ILcom/google/android/gms/tasks/TaskCompletionSource;)V
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {v0, p1}, Lcom/google/android/gms/common/api/internal/zac;-><init>(I)V
+
+    const-string v2, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    iput-object p2, v0, Lcom/google/android/gms/common/api/internal/zad;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    const/4 v2, 0x6
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method protected abstract zac(Lcom/google/android/gms/common/api/internal/zabq;)V
+.end method
+
+.method public final zad(Lcom/google/android/gms/common/api/Status;)V
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/common/api/ApiException;
+
+    const/4 v3, 0x4
+
+    .line 3
+    invoke-direct {v0, p1}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V
+
+    const/4 v3, 0x7
+
+    .line 6
+    iget-object p1, v1, Lcom/google/android/gms/common/api/internal/zad;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    const/4 v3, 0x4
+
+    .line 8
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetException(Ljava/lang/Exception;)Z
+
+    .line 11
+    return-void
+.end method
+
+.method public final zae(Ljava/lang/Exception;)V
+    .locals 5
+
+    move-object v1, p0
+
+    .line 1
+    iget-object v0, v1, Lcom/google/android/gms/common/api/internal/zad;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    const/4 v4, 0x3
+
+    .line 3
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetException(Ljava/lang/Exception;)Z
+
+    .line 6
+    return-void
+.end method
+
+.method public final zaf(Lcom/google/android/gms/common/api/internal/zabq;)V
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    :try_start_0
+    const/4 v3, 0x7
+
+    invoke-virtual {v1, p1}, Lcom/google/android/gms/common/api/internal/zad;->zac(Lcom/google/android/gms/common/api/internal/zabq;)V
+    :try_end_0
+    .catch Landroid/os/DeadObjectException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 4
+    return-void
+
+    .line 5
+    :catch_0
+    move-exception p1
+
+    .line 6
+    iget-object v0, v1, Lcom/google/android/gms/common/api/internal/zad;->zaa:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    const/4 v3, 0x7
+
+    .line 8
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->trySetException(Ljava/lang/Exception;)Z
+
+    .line 11
+    return-void
+
+    .line 12
+    :catch_1
+    move-exception p1
+
+    .line 13
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zai;->zah(Landroid/os/RemoteException;)Lcom/google/android/gms/common/api/Status;
+
+    .line 16
+    move-result-object v3
+
+    move-object p1, v3
+
+    .line 17
+    invoke-virtual {v1, p1}, Lcom/google/android/gms/common/api/internal/zad;->zad(Lcom/google/android/gms/common/api/Status;)V
+
+    const/4 v3, 0x4
+
+    .line 20
+    return-void
+
+    .line 21
+    :catch_2
+    move-exception p1
+
+    .line 22
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/zai;->zah(Landroid/os/RemoteException;)Lcom/google/android/gms/common/api/Status;
+
+    .line 25
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 26
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/common/api/internal/zad;->zad(Lcom/google/android/gms/common/api/Status;)V
+
+    const/4 v3, 0x3
+
+    .line 29
+    throw p1
+
+    const/4 v3, 0x4
+.end method
+
+.method public zag(Lcom/google/android/gms/common/api/internal/zaad;Z)V
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    return-void
+.end method

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="25.0sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="25.0dip"
+    android:paddingEnd="25.0sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14.0sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0sp"
+        android:text="@string/feedbackYouCanChooseStandardQueryOption"
+        style="@style/MainColorStyle" />
+    <TextView
+        android:textSize="14.0sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0sp"
+        android:text="@string/feedbackStandardRequestOptions"
+        style="@style/MainColorStyle" />
+    <RadioGroup
+        android:orientation="vertical"
+        android:id="@id/feedbackOptionsGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@id/feedbackPurchaseProblemsRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/feedbackRequestOption1"
+            style="@style/MainColorStyle" />
+        <RadioButton
+            android:id="@id/feedbackTrialProblemsRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackRequestOption2"
+            style="@style/MainColorStyle" />
+        <RadioButton
+            android:id="@id/feedbackOtherProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackRequestOtherProblem"
+            style="@style/MainColorStyle" />
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/customRequestBlock"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14.0sp"
+            android:id="@id/feedbackMessageHint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0sp"
+            android:text="@string/feedbackMessageTxtHint"
+            style="@style/MainColorStyle" />
+        <EditText
+            android:enabled="false"
+            android:gravity="start|center|top"
+            android:id="@id/feedbackMessage"
+            android:scrollbars="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="300.0dip"
+            android:hint="@string/feedbackMessageFieldHint"
+            android:maxLength="300"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            style="@style/MainColorStyle" />
+        <TextView
+            android:textSize="11.0sp"
+            android:id="@id/feedbackMessageSymbolsLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackMessageLeftChar"
+            style="@style/MainColorStyle" />
+        <TextView
+            android:textSize="13.0sp"
+            android:textColor="@color/btn_red"
+            android:id="@id/feedbackError"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+    <TextView
+        android:textSize="14.0sp"
+        android:id="@id/feedbackResponseEmailManualHint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:text="@string/feedbackResponseEmailTxtHint"
+        style="@style/MainColorStyle" />
+    <EditText
+        android:id="@id/feedbackResponseEmailManual"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300.0dip"
+        android:hint="@string/feedbackResponseEmailFieldHint"
+        android:lines="1"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:importantForAutofill="no"
+        style="@style/MainColorStyle">
+        <requestFocus />
+    </EditText>
+</LinearLayout>

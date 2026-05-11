@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/undo_selector"
+        android:id="@id/undoBtn"
+        android:title="@string/undoMenuItem"
+        yourapp:showAsAction="always" />
+    <item
+        android:icon="@drawable/redo_selector"
+        android:id="@id/redoBtn"
+        android:title="@string/redoMenuItem"
+        yourapp:showAsAction="always" />
+    <item
+        android:icon="@drawable/save_selector"
+        android:id="@id/saveBtn"
+        android:title="@string/saveMenuItem"
+        yourapp:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_toolbar_menu"
+        android:id="@id/empty"
+        android:orderInCategory="101"
+        android:title="@string/menuBtn"
+        yourapp:showAsAction="always">
+        <menu>
+            <item
+                android:icon="@drawable/ic_new_file"
+                android:id="@id/newFileBtn"
+                android:title="@string/newMenuItem"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_folder_open"
+                android:id="@id/openFileBtn"
+                android:title="@string/openMenuItem"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/saveas_selector"
+                android:id="@id/saveAsBtn"
+                android:title="@string/saveAsMenuItem"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_search_white"
+                android:id="@id/findBtn"
+                android:title="@string/searchAndReplaceMenuItem"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_play"
+                android:id="@id/startInBrowserBtn"
+                android:title="@string/startInBrowserMenuItem"
+                yourapp:showAsAction="never" />
+            <item
+                android:icon="@drawable/ic_info"
+                android:id="@id/infoBtn"
+                android:title="@string/fileInfoMenuItem"
+                yourapp:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

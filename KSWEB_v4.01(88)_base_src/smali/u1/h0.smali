@@ -1,0 +1,55 @@
+.class public final synthetic Lu1/h0;
+.super Ljava/lang/Object;
+.source "r8-map-id-07a2e46efc69344df0bd7ad0a3338ee8820a11ae43deece80f250d59a6cc30c8"
+
+# interfaces
+.implements Lu4/a;
+
+
+# instance fields
+.field public final synthetic e:Lu1/i0;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lu1/i0;)V
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v2, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    iput-object p1, v0, Lu1/h0;->e:Lu1/i0;
+
+    const/4 v2, 0x3
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c()Ljava/lang/Object;
+    .locals 5
+
+    move-object v1, p0
+
+    .line 1
+    iget-object v0, v1, Lu1/h0;->e:Lu1/i0;
+
+    const/4 v3, 0x7
+
+    .line 3
+    invoke-static {v0}, Lu1/i0;->a(Lu1/i0;)Lg4/y;
+
+    .line 6
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 7
+    return-object v0
+.end method

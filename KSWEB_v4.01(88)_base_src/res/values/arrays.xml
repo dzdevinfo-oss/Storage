@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_menu_array">
+        <item>Status</item>
+        <item>Lighttpd</item>
+        <item>Nginx</item>
+        <item>Apache</item>
+        <item>MySQL</item>
+        <item>PHP</item>
+        <item>FTP</item>
+        <item>Scheduler</item>
+        <item>Tools</item>
+        <item>Settings</item>
+    </string-array>
+</resources>
